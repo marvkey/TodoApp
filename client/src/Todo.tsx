@@ -1,6 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react';
 
-export class Todo{
+export default class Todo{
     id=0
     name="empty"
     completed =false
@@ -13,12 +13,11 @@ export function AddTodo(name:any){
     console.log("item has been push",name)
 };
 
-export default function List(){
+export function PrintItem(){
+
     return (
         <>
-        for (var i = 0; i < TodoList.length; i++) {
-            <key={todo.id} toggleTodo={toggleTodo} todo={todo}
-        }  
-        </>      
-     )
+       <text>{TodoList.length   }</text>
+        </>
+      )
 }
